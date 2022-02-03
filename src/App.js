@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Activity from "./components/Activity.jsx";
 
 function App() {
@@ -16,24 +16,24 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h3>Choose participants: </h3>
-        <div>
+        <div className="radioBtn">
         <label htmlFor="participantsOne">1: </label>
         <input type="radio" id="participants" name="participants" value="1"/>
         </div>
-        <div>
+        <div className="radioBtn">
         <label htmlFor="participantsTwo">2: </label>
         <input type="radio" id="participants" name="participants" value="2"/>
         </div>
-        <div>
+        <div className="radioBtn">
         <label htmlFor="participantsFour">4: </label>
         <input type="radio" id="participants" name="participants" value="4"/>
         </div>
-        <div>
+        <div className="radioBtn">
         <label htmlFor="participantsNone">None: </label>
         <input type="radio" id="participants" name="participants" value="none"/>
         </div>
-        <div>
-          <button
+        <div className="btnContainer">
+          <button className="activityBtn" 
             onClick={() => {getParticipants(); setChangeActivity(!changeActivity)
             }}
           >

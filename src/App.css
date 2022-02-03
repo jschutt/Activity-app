@@ -16,12 +16,13 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  /* flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-top: 30px;
 }
 
 .App-link {
@@ -35,4 +36,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h3 {
+  margin: 0;
+}
+
+.radioBtn {
+  display: inline-block;
+  margin: 4px 8px 4px 8px;
+}
+
+.radioBtn input {
+  margin: 0;
+}
+
+.radioBtn label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.activityContainer {
+  margin: 20px 10px 20px 10px;
+  border: 8px double #282c34;
+  background-color: #3a3f4b;
+  border-radius: 20px;
+  width: 50%;
+  
+}
+
+.activityContainer h5 {
+  margin: 10px;
+}
+
+.activityContainer h4 {
+  margin: 15px;
+}
+
+.btnContainer {
+  margin: 15px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.activityBtn {
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  background-color: #3a3f4b;
+}
+
+.activityBtn:hover {
+  background-color: #4b5261;
+}
+
+.activityBtn:active {
+  background-color: #3a3f4b;
 }
